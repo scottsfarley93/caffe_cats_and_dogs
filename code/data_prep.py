@@ -9,11 +9,9 @@ sys.path.insert(1, "~/caffe/python")
 
 import caffe
 from caffe.proto import caffe_pb2
-import lmbd
 
+caffe.set_mode_cpu()
 
+net = caffe.Net('./../caffe_models/conv.prototxt', caffe.TEST)
 
-
-
-IMAGE_WIDTH  = 227
-IMAGE_HEIGHT = 227
+[(k, v.data.shape) for k, v in net.blobs.items()]

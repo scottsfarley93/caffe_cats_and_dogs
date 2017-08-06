@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/scottsfarley/Documents/caffe_cats_and_dogs/tensorflow/model.model"
+all_model_checkpoint_paths: "/home/scottsfarley/Documents/caffe_cats_and_dogs/tensorflow/model.model"
